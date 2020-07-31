@@ -1,11 +1,17 @@
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8" />
         <title>Oru Divyaprabandam</title>
         
         <style>
             body {
-                width: 500px;
+                align-content: center;
+                background-image: url('/images/tirumala.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                 
             }
             button {
                 background-color: #336dab;
@@ -15,14 +21,58 @@
                 text-align: center;
                 font-size: 16px;
             }
+            h1 {
+                color:white;
+                text-align: center;
+
+            }
+            p {
+                color: white;
+                font-size: medium;
+              
+            }
+            .center {
+            margin: auto;
+            width: 70%;
+            padding: 10px;
+            position:absolute;
+            left:50%;
+            top:50%;
+            }
+            a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+            }
+
+            a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+            .previous {
+            background-color: #f1f1f1;
+            color: black;
+            }
+
+            .next {
+            background-color: #4CAF50;
+            color: white;
+            }
+
+            .round {
+            border-radius: 50%;
+            }
         </style>
     </head>
     <body>
-        <h1>Om Namo Venkatesaya</h1>
+        <h1>Divyaprabandam திவ்யப்ரபந்தம் దివ్యప్రబంధం</h1>
 
-        <div>
+        <!-- <div>
             <img src="/images/tirumala.jpg" alt="Dharma" />
         </div>
+        <div style="background-image: url('/images/tirumala.jpg');"> -->
+        <div class="center"></div>
         <p></p>
         <p id="dNumber">Num</p>
         <p id="dAzhwaar">Azhwaar</p>
@@ -31,6 +81,24 @@
         <p id="dPaasuram">Paasuram</p>
         <p id="dPaasuramta">பாசுரம்</p>
         <p id="dPaasuramte">పాశురాలు</p>
+        <p id="dDivyadesam">Divyadesam</p>
+        <p></p>
+        <a id="first" href="#" class="previous">&laquo; First</a>
+        <a id="pfhundred" href="#" class="previous">&laquo; Previous 500</a>
+        <a id="phundred" href="#" class="previous">&laquo; Previous 100</a>
+        <a id="pfifty" href="#" class="previous">&laquo; Previous 50</a>
+        <a id="pten" href="#" class="previous">&laquo; Previous 10</a>
+        <a id="prev" href="#" class="previous">&laquo; Previous</a>
+        <a id="next" href="#" class="next">Next &raquo;</a>
+        <a id="nten" href="#" class="next">Next 10 &raquo;</a>
+        <a id="nfifty" href="#" class="next">Next 50 &raquo;</a>
+        <a id="nhundred" href="#" class="next">Next 100 &raquo;</a>
+        <a id="nfhundred" href="#" class="next">Next 500 &raquo;</a>
+        <a id="last" href="#" class="next">Last &raquo;</a>
+        <p></p>
+        <p>Email: <a href="mailto:Vaishnavism.eclass@gmail.com">Vaishnavism.eClass@gmail.com</a></p>
+        </div>
+    </div>
         <script src="popup.js"></script>
     </body>
 </html>
